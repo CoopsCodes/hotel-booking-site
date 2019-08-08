@@ -1,7 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
 
-export default class Home extends Component {
-  render() {
-    return <div>Hello from Home</div>;
-  }
+export default function Home() {
+  return (
+    <Hero>
+      <Banner title="Luxurious Rooms" subtitle="Deluxe Rooms from $200">
+        <Link to="/rooms" className="btn-primary">
+          Rooms
+        </Link>
+      </Banner>
+    </Hero>
+  );
 }

@@ -1,5 +1,6 @@
 import React from "react";
+import Hero from "../components/Hero";
 
 export default function Error() {
-  return <div>Wrong way go back</div>;
+  return <Hero>Error</Hero>;
 }
